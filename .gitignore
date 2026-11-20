@@ -1,0 +1,8 @@
+# Build artifacts
+build/
+*.keystore
+.gradle/
+*.iml
+.idea/
+.DS_Store
+Thumbs.db

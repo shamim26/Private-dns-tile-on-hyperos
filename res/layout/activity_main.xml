@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_shield"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mode: Checking..."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Provider: -"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvPermissionWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="#22FF5555"
+        android:textColor="#FFFF5555"
+        android:textSize="13sp"
+        android:text="Tap here to grant root permission in KernelSU"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Toggle DNS"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAddTile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Force Add Tile to Control Center"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnOpenSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Configure DNS Provider in Settings"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Tip: In KernelSU/ResuKisu, grant root to Private DNS to allow 1-tap tile injection."
+        android:textSize="13sp"
+        android:alpha="0.7" />
+
+</LinearLayout>
